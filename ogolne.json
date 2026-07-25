@@ -1,0 +1,5 @@
+[
+  { "word": "Krzesło", "taboo": ["Siedzieć", "Nogi", "Stół", "Meble", "Drewno"] },
+  { "word": "Parasol", "taboo": ["Deszcz", "Woda", "Ochrona", "Rączka", "Składany"] },
+  { "word": "Telefon", "taboo": ["Dzwonić", "Ekran", "Aplikacja", "Bateria", "Rozmowa"] }
+]

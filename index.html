@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TABU Mobile</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+  <div id="setup-view" class="view">
+    <div class="glass-card">
+      <div class="title">TABU GAME</div>
+
+      <div class="form-group">
+        <label>Drużyna 1</label>
+        <input type="text" id="team1-input" value="DRUŻYNA A">
+      </div>
+      <div class="form-group">
+        <label>Drużyna 2</label>
+        <input type="text" id="team2-input" value="DRUŻYNA B">
+      </div>
+
+      <div class="form-group">
+        <label>Liczba rund w meczu</label>
+        <div class="number-stepper">
+          <button class="stepper-btn" onclick="adjustValue('rounds-input', -1, 1, 20)">-</button>
+          <input type="number" id="rounds-input" value="4" min="1" max="20">
+          <button class="stepper-btn" onclick="adjustValue('rounds-input', 1, 1, 20)">+</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Czas rundy (sekundy)</label>
+        <div class="number-stepper">
+          <button class="stepper-btn" onclick="adjustValue('time-input', -5, 10, 300)">-</button>
+          <input type="number" id="time-input" value="60" min="10" max="300" step="5">
+          <button class="stepper-btn" onclick="adjustValue('time-input', 5, 10, 300)">+</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Liczba pominięć na turę</label>
+        <div class="number-stepper">
+          <button class="stepper-btn" onclick="adjustValue('skips-input', -1, 0, 10)">-</button>
+          <input type="number" id="skips-input" value="3" min="0" max="10">
+          <button class="stepper-btn" onclick="adjustValue('skips-input', 1, 0, 10)">+</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Kategorie</label>
+        <div class="checkbox-group" id="categories-list"></div>
+      </div>
+
+      <button class="btn btn-main" id="start-btn" onclick="saveSettingsAndStart()">START MECZU</button>
+      <button class="btn btn-sub" onclick="showHistoryView()">HISTORIA WYNIKÓW</button>
+    </div>
+  </div>
+
+  <div id="turn-view" class="view hidden">
+    <div class="glass-card" style="text-align: center;">
+      <div style="font-size: 0.75rem; font-weight: 900; color: var(--primary); letter-spacing: 2px;" id="turn-indicator">RUNDA 1 Z 4 (TURA 1/2)</div>
+      <h2 id="turn-title" style="margin: 12px 0 6px 0; font-size: 1.5rem; text-transform: uppercase;">PRZYGOTUJ SIĘ!</h2>
+      <p id="turn-desc" style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;"></p>
+      <button class="btn btn-main" onclick="startTurn()">ROZPOCZNIJ TURĘ</button>
+    </div>
+
+    <div class="glass-card">
+      <div style="text-align: center; color: var(--text-muted); font-size: 0.7rem; font-weight: 800; letter-spacing: 1px;">WYNIKI MECZU</div>
+      <div class="scores-grid" id="scoreboard-teams"></div>
+    </div>
+  </div>
+
+  <div id="game-view" class="view hidden">
+    <div class="team-banner" id="current-team-label">DRUŻYNA A</div>
+
+    <div class="hud-header">
+      <div class="hud-box">
+        <span class="hud-label">Runda</span>
+        <span class="hud-value" id="turn-stat">1/4</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-label">Punkty</span>
+        <span class="hud-value" style="color: var(--success);" id="current-score">0</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-label">Pominięcia</span>
+        <span class="hud-value" style="color: var(--warning);" id="skips-left-hud">0</span>
+      </div>
+      <div class="hud-box">
+        <span class="hud-label">Czas</span>
+        <span class="hud-value" style="color: var(--danger);" id="timer">60s</span>
+      </div>
+    </div>
+
+    <div class="glass-card game-card">
+      <div class="main-word" id="main-word">---</div>
+      <div class="taboo-badge">Słowa Zakazane</div>
+      <ul class="taboo-list" id="taboo-list"></ul>
+    </div>
+
+    <div class="action-grid">
+      <button class="btn btn-taboo" onclick="handlePoint(-1)">TABU!</button>
+      <button class="btn btn-skip" id="skip-btn" onclick="handleSkip()">POMIŃ</button>
+      <button class="btn btn-correct" onclick="handlePoint(1)">TRAFIONE!</button>
+    </div>
+  </div>
+
+  <div id="end-view" class="view hidden">
+    <div class="glass-card" style="text-align: center;">
+      <div class="title" style="background: var(--success-gradient); -webkit-background-clip: text;">KONIEC MECZU!</div>
+      <h2 id="winner-label" style="margin-bottom: 20px; font-size: 1.3rem;">ZWYCIĘZCA: ---</h2>
+      <div class="scores-grid" id="end-scoreboard-teams" style="margin-bottom: 20px;"></div>
+      <button class="btn btn-main" onclick="showSetupView()">MENU GŁÓWNE</button>
+    </div>
+  </div>
+
+  <div id="history-view" class="view hidden">
+    <div class="glass-card full-screen-card">
+      <div>
+        <div class="title" style="margin-bottom: 8px;">HISTORIA WYNIKÓW</div>
+        <div class="history-list-full" id="history-container"></div>
+      </div>
+      <div>
+        <button class="btn btn-sub" onclick="showSetupView()">POWRÓT</button>
+        <button class="btn btn-taboo" style="width:100%; margin-top:8px; font-size:0.75rem; padding: 12px;" onclick="clearHistory()">WYCZYŚĆ HISTORIĘ</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="custom-modal" class="modal-overlay hidden">
+  <div class="modal-card">
+    <div class="modal-title" id="modal-title">KOMUNIKAT</div>
+    <div class="modal-body" id="modal-body">Treść komunikatu</div>
+    <button class="btn btn-main" onclick="closeModal()">OK</button>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
