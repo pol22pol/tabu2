@@ -1,1 +1,553 @@
+/* ============================================================
+   TABU MOBILE — style.css
+   Dark, high-energy "game show" look. Big glass cards floating
+   over a deep violet gradient, chunky thumb-friendly buttons,
+   neon status colors for TABU / POMIŃ / TRAFIONE.
+   ============================================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600;700;800;900&display=swap');
+
+:root {
+  --bg-top: #120a24;
+  --bg-bottom: #1c0f33;
+
+  --primary: #8b5cf6;
+  --primary-dark: #6d28d9;
+  --primary-gradient: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+
+  --success: #22c55e;
+  --success-dark: #15803d;
+  --success-gradient: linear-gradient(135deg, #34d399 0%, #16a34a 100%);
+
+  --warning: #f5a524;
+  --warning-dark: #b8730f;
+  --warning-gradient: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+
+  --danger: #f5385a;
+  --danger-dark: #b91c3c;
+  --danger-gradient: linear-gradient(135deg, #fb6f8f 0%, #e11d48 100%);
+
+  --text: #f5f3ff;
+  --text-muted: #9d94c2;
+
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 0%, #2a1550 0%, transparent 55%),
+              radial-gradient(circle at 100% 100%, #1a2c55 0%, transparent 55%),
+              linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+  min-height: 100vh;
+}
+
+/* ---------- Views ---------- */
+.view.hidden {
+  display: none;
+}
+
+/* ---------- Glass card ---------- */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  padding: 22px;
+  margin-bottom: 16px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: var(--glass-shadow);
+}
+
+.full-screen-card {
+  min-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ---------- Title ---------- */
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- Form controls ---------- */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 13px 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--primary);
+}
+
+.number-stepper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.number-stepper input[type="number"] {
+  text-align: center;
+  flex: 1;
+  -moz-appearance: textfield;
+}
+
+.number-stepper input[type="number"]::-webkit-outer-spin-button,
+.number-stepper input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.stepper-btn {
+  flex: 0 0 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.stepper-btn:active {
+  transform: scale(0.92);
+  background: var(--primary);
+}
+
+/* ---------- Category checkboxes ---------- */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.checkbox-item:has(input:checked) {
+  color: #fff;
+  background: var(--primary-gradient);
+  border-color: transparent;
+}
+
+.checkbox-item input {
+  accent-color: var(--primary);
+  width: 15px;
+  height: 15px;
+}
+
+/* ---------- Mode toggle (Drużynowy / Solo) ---------- */
+.mode-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.mode-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 8px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--text-muted);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mode-option:has(input:checked) {
+  color: #fff;
+  background: var(--primary-gradient);
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+}
+
+.mode-option input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* ---------- Dynamic players list (solo mode) ---------- */
+.players-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.player-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.player-row .player-input {
+  flex: 1;
+  width: auto;
+}
+
+.player-remove-btn {
+  flex: 0 0 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: rgba(245, 56, 90, 0.15);
+  color: var(--danger);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.15s ease;
+}
+
+.player-remove-btn:active {
+  transform: scale(0.92);
+}
+
+.player-remove-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+  filter: brightness(0.92);
+}
+
+.btn-main {
+  background: var(--primary-gradient);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);
+}
+
+.btn-sub {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  box-shadow: none;
+}
+
+.btn-taboo {
+  background: var(--danger-gradient);
+  box-shadow: 0 6px 18px rgba(245, 56, 90, 0.4);
+}
+
+.btn-skip {
+  background: var(--warning-gradient);
+  box-shadow: 0 6px 18px rgba(245, 165, 36, 0.4);
+}
+
+.btn-correct {
+  background: var(--success-gradient);
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.4);
+}
+
+/* ---------- Scoreboard grid (setup / turn / end views) ---------- */
+.scores-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.team-box {
+  text-align: center;
+  padding: 14px 8px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+}
+
+.team-box .name {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.team-box .pts {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* ---------- Game view ---------- */
+.team-banner {
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  background: var(--primary-gradient);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.hud-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.hud-box {
+  text-align: center;
+  padding: 10px 4px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+}
+
+.hud-label {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.hud-value {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.game-card {
+  text-align: center;
+  padding: 34px 20px;
+}
+
+.main-word {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  word-break: break-word;
+}
+
+.taboo-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--danger);
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border: 1px solid rgba(245, 56, 90, 0.4);
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.taboo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.taboo-list li {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.taboo-list li:last-child {
+  border-bottom: none;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.action-grid .btn {
+  padding: 18px 6px;
+  font-size: 0.75rem;
+}
+
+/* ---------- Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 4, 20, 0.72);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 1000;
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 360px;
+  background: #1c1233;
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: var(--glass-shadow);
+}
+
+.modal-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-body {
+  font-size: 0.95rem;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* ---------- History ---------- */
+.history-list-full {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 360px) {
+  .title { font-size: 1.7rem; }
+  .main-word { font-size: 1.7rem; }
+}
