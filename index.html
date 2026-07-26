@@ -14,16 +14,34 @@
       <div class="title">TABU GAME</div>
 
       <div class="form-group">
+        <label>Tryb gry</label>
+        <div class="mode-toggle">
+          <label class="mode-option">
+            <input type="radio" name="mode" value="team" checked onchange="handleModeChange()">
+            DRUŻYNOWY
+          </label>
+          <label class="mode-option">
+            <input type="radio" name="mode" value="solo" onchange="handleModeChange()">
+            SOLO (INDYWIDUALNY)
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group" id="team-fields">
         <label>Drużyna 1</label>
         <input type="text" id="team1-input" value="DRUŻYNA A">
-      </div>
-      <div class="form-group">
-        <label>Drużyna 2</label>
+        <label style="margin-top: 10px;">Drużyna 2</label>
         <input type="text" id="team2-input" value="DRUŻYNA B">
       </div>
 
+      <div class="form-group hidden" id="players-fields">
+        <label>Gracze</label>
+        <div class="players-list" id="players-list"></div>
+        <button type="button" class="btn btn-sub" onclick="addPlayerField()">+ DODAJ GRACZA</button>
+      </div>
+
       <div class="form-group">
-        <label>Liczba rund w meczu</label>
+        <label id="rounds-label">Liczba rund w meczu</label>
         <div class="number-stepper">
           <button class="stepper-btn" onclick="adjustValue('rounds-input', -1, 1, 20)">-</button>
           <input type="number" id="rounds-input" value="4" min="1" max="20">
@@ -78,7 +96,7 @@
 
     <div class="hud-header">
       <div class="hud-box">
-        <span class="hud-label">Runda</span>
+        <span class="hud-label" id="round-label">Runda</span>
         <span class="hud-value" id="turn-stat">1/4</span>
       </div>
       <div class="hud-box">
