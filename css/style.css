@@ -64,8 +64,8 @@ body {
 }
 
 /* ---------- Views ---------- */
-.view.hidden {
-  display: none;
+.hidden {
+  display: none !important;
 }
 
 /* ---------- Glass card ---------- */
