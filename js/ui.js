@@ -6,7 +6,7 @@
 // listy drużyn, więc automatycznie obsłuży 2, 3 lub więcej drużyn w kolejnej
 // wersji - dziś przy 2 drużynach wygląda identycznie jak wcześniej.
 
-import { CATEGORY_FILES } from "./config.js";
+import { CATEGORY_FILES, MIN_PARTICIPANTS } from "./config.js";
 
 export function hideAllViews() {
   document.querySelectorAll(".view").forEach((v) => v.classList.add("hidden"));
@@ -44,15 +44,64 @@ export function fillSetupForm(config) {
 
 export function readSetupForm() {
   return {
+    mode: getSelectedMode(),
     teams: [
       (document.getElementById("team1-input").value || "DRUŻYNA A").toUpperCase(),
       (document.getElementById("team2-input").value || "DRUŻYNA B").toUpperCase(),
     ],
+    players: getPlayersFromForm(),
     rounds: parseInt(document.getElementById("rounds-input").value) || 4,
     time: parseInt(document.getElementById("time-input").value) || 60,
     skips: parseInt(document.getElementById("skips-input").value) || 0,
     selectedCategories: getSelectedCategoryIds(),
   };
+}
+
+/** Tryb gry: "team" (drużynowy) lub "solo" (indywidualny, 1 tura = 1 runda). */
+export function getSelectedMode() {
+  const checked = document.querySelector('input[name="mode"]:checked');
+  return checked ? checked.value : "team";
+}
+
+export function setSelectedMode(mode) {
+  const radio = document.querySelector(`input[name="mode"][value="${mode}"]`);
+  if (radio) radio.checked = true;
+}
+
+/** Pokazuje pola drużyn albo listę graczy, zależnie od wybranego trybu. */
+export function toggleModeFields(mode) {
+  const teamFields = document.getElementById("team-fields");
+  const playersFields = document.getElementById("players-fields");
+  if (mode === "solo") {
+    teamFields.classList.add("hidden");
+    playersFields.classList.remove("hidden");
+  } else {
+    teamFields.classList.remove("hidden");
+    playersFields.classList.add("hidden");
+  }
+}
+
+/** Renderuje dynamiczną listę pól "gracz" z przyciskiem usuwania każdego wiersza. */
+export function renderPlayersList(players) {
+  const container = document.getElementById("players-list");
+  container.innerHTML = players
+    .map(
+      (name, i) => `
+        <div class="player-row">
+          <input type="text" class="player-input" value="${name}">
+          <button type="button" class="player-remove-btn" onclick="removePlayerField(${i})" ${
+        players.length <= MIN_PARTICIPANTS ? "disabled" : ""
+      }>✕</button>
+        </div>
+      `
+    )
+    .join("");
+}
+
+export function getPlayersFromForm() {
+  return Array.from(document.querySelectorAll(".player-input")).map(
+    (input, i) => (input.value || `GRACZ ${i + 1}`).toUpperCase()
+  );
 }
 
 export function adjustValue(inputId, delta, min, max) {
@@ -96,7 +145,7 @@ export function showTurnPrepView({ currentRound, totalRounds, subTurnNumber, tea
   document.getElementById("turn-title").innerText = `PRZYGOTUJ SIĘ: ${activeTeamName}`;
   document.getElementById(
     "turn-desc"
-  ).innerText = `Przekażcie telefon osobie opisującej z drużyny ${activeTeamName}.`;
+  ).innerText = `Przekażcie telefon osobie opisującej: ${activeTeamName}.`;
 }
 
 export function setupGameViewForTurn({ activeTeamName, currentRound, totalRounds, roundScore, skipsLeft, timeLeft }) {

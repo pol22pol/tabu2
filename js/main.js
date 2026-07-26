@@ -14,6 +14,9 @@ import {
   showHistoryView,
   clearHistory,
   showSetupView,
+  handleModeChange,
+  addPlayerField,
+  removePlayerField,
 } from "./game.js";
 
 window.adjustValue = adjustValue;
@@ -25,6 +28,9 @@ window.handleSkip = handleSkip;
 window.showHistoryView = showHistoryView;
 window.clearHistory = clearHistory;
 window.showSetupView = showSetupView;
+window.handleModeChange = handleModeChange;
+window.addPlayerField = addPlayerField;
+window.removePlayerField = removePlayerField;
 
 window.addEventListener("DOMContentLoaded", () => {
   initSetupView();

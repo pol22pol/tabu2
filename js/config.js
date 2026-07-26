@@ -14,12 +14,16 @@ export const CATEGORY_FILES = [
   { id: "przyroda",     name: "PRZYRODA",            file: "przyroda.json" },
 ];
 
-// Domyślna konfiguracja. `teams` to tablica nazw drużyn - dziś zawsze 2,
-// ale reszta silnika gry (teamManager, ui) już umie obsłużyć dowolną liczbę >= 2,
-// co jest przygotowaniem pod tryb "N drużyn jednoosobowych".
+// Domyślna konfiguracja. `teams` to tablica nazw drużyn (tryb "team", zawsze 2),
+// `players` to tablica nazw graczy (tryb "solo", domyślnie 3, jednoosobowi).
+// `mode` decyduje, która lista jest aktywna w danym meczu.
+// teamManager/ui już umieją obsłużyć dowolną liczbę uczestników >= 2, więc oba
+// tryby korzystają z tego samego silnika rozgrywki.
 export function getDefaultConfig() {
   return {
+    mode: "team", // "team" (drużyny, 1 tura na drużynę w rundzie) | "solo" (gracze, 1 tura = 1 runda)
     teams: ["DRUŻYNA A", "DRUŻYNA B"],
+    players: ["GRACZ 1", "GRACZ 2", "GRACZ 3"],
     rounds: 4,
     time: 60,
     skips: 3,
@@ -28,6 +32,7 @@ export function getDefaultConfig() {
 }
 
 const STORAGE_KEY_CONFIG = "taboo_config";
+export const MIN_PARTICIPANTS = 2;
 
 export function loadConfig() {
   const raw = localStorage.getItem(STORAGE_KEY_CONFIG);
@@ -40,7 +45,15 @@ export function loadConfig() {
       delete saved.team1;
       delete saved.team2;
     }
-    return { ...getDefaultConfig(), ...saved };
+    const merged = { ...getDefaultConfig(), ...saved };
+    // Zabezpieczenie na wypadek uszkodzonych/pustych list z localStorage.
+    if (!Array.isArray(merged.players) || merged.players.length < MIN_PARTICIPANTS) {
+      merged.players = getDefaultConfig().players;
+    }
+    if (!Array.isArray(merged.teams) || merged.teams.length < MIN_PARTICIPANTS) {
+      merged.teams = getDefaultConfig().teams;
+    }
+    return merged;
   } catch (e) {
     console.error("Nie udało się odczytać zapisanej konfiguracji", e);
     return getDefaultConfig();
