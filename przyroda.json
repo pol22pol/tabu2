@@ -1,0 +1,402 @@
+[
+  {
+    "word": "Dżungla",
+    "taboo": ["las", "tropiki", "wilgotna", "zwierzęta", "rośliny"]
+  },
+  {
+    "word": "Sawanna",
+    "taboo": ["Afryka", "trawa", "lwy", "równina", "suche"]
+  },
+  {
+    "word": "Step",
+    "taboo": ["trawa", "równina", "wiatr", "bezdrzewny", "krajobraz"]
+  },
+  {
+    "word": "Dolina",
+    "taboo": ["góry", "teren", "rzeka", "nisko", "krajobraz"]
+  },
+  {
+    "word": "Jaskinia",
+    "taboo": ["skała", "ciemno", "pod ziemią", "nietoperz", "tunel"]
+  },
+  {
+    "word": "Skała",
+    "taboo": ["kamień", "góra", "twarda", "minerał", "klif"]
+  },
+  {
+    "word": "Kamień",
+    "taboo": ["skała", "ziemia", "twardy", "rzucać", "ogród"]
+  },
+  {
+    "word": "Błoto",
+    "taboo": ["ziemia", "woda", "mokre", "brudne", "kałuża"]
+  },
+  {
+    "word": "Kałuża",
+    "taboo": ["woda", "deszcz", "mokro", "droga", "buty"]
+  },
+  {
+    "word": "Rosa",
+    "taboo": ["krople", "rano", "trawa", "woda", "wilgoć"]
+  },
+  {
+    "word": "Mgła",
+    "taboo": ["widoczność", "powietrze", "biała", "rano", "chmura"]
+  },
+  {
+    "word": "Mróz",
+    "taboo": ["zimno", "temperatura", "lód", "zima", "szron"]
+  },
+  {
+    "word": "Szron",
+    "taboo": ["lód", "zimno", "rano", "biały", "mróz"]
+  },
+  {
+    "word": "Lód",
+    "taboo": ["woda", "zimno", "zamarznięty", "kostka", "ślizgać"]
+  },
+  {
+    "word": "Lodowiec",
+    "taboo": ["lód", "góra", "topnieje", "Arktyka", "śnieg"]
+  },
+  {
+    "word": "Arktyka",
+    "taboo": ["biegun", "zimno", "lód", "niedźwiedź", "północ"]
+  },
+  {
+    "word": "Antarktyda",
+    "taboo": ["kontynent", "lód", "pingwin", "biegun", "zimno"]
+  },
+  {
+    "word": "Pingwin",
+    "taboo": ["ptak", "Antarktyda", "lód", "czarno-biały", "pływa"]
+  },
+  {
+    "word": "Koala",
+    "taboo": ["Australia", "miś", "eukaliptus", "drzewo", "zwierzę"]
+  },
+  {
+    "word": "Kangur",
+    "taboo": ["Australia", "torba", "skacze", "zwierzę", "ogon"]
+  },
+  {
+    "word": "Panda",
+    "taboo": ["Chiny", "biało-czarna", "bambus", "miś", "niedźwiedź"]
+  },
+  {
+    "word": "Tygrys",
+    "taboo": ["kot", "paski", "drapieżnik", "las", "zwierzę"]
+  },
+  {
+    "word": "Lew",
+    "taboo": ["król", "dżungla", "grzywa", "Afryka", "kot"]
+  },
+  {
+    "word": "Słoń",
+    "taboo": ["trąba", "duży", "Afryka", "usz", "zwierzę"]
+  },
+  {
+    "word": "Żyrafa",
+    "taboo": ["długa szyja", "Afryka", "wysoka", "zwierzę", "liście"]
+  },
+  {
+    "word": "Małpa",
+    "taboo": ["drzewo", "banan", "zwierzę", "dżungla", "skacze"]
+  },
+  {
+    "word": "Nietoperz",
+    "taboo": ["lata", "jaskinia", "noc", "skrzydła", "ssak"]
+  },
+  {
+    "word": "Sowa",
+    "taboo": ["ptak", "noc", "oczy", "las", "mądra"]
+  },
+  {
+    "word": "Dzięcioł",
+    "taboo": ["ptak", "drzewo", "dziobać", "las", "kora"]
+  },
+  {
+    "word": "Borsuk",
+    "taboo": ["zwierzę", "nora", "las", "ssak", "paski"]
+  },
+  {
+    "word": "Jeż",
+    "taboo": ["kolce", "mały", "zwierzę", "ogród", "noc"]
+  },
+  {
+    "word": "Wiewiórka",
+    "taboo": ["orzech", "ogon", "drzewo", "las", "mała"]
+  },
+  {
+    "word": "Kret",
+    "taboo": ["ziemia", "tunel", "ogród", "ślepy", "kopie"]
+  },
+  {
+    "word": "Ślimak",
+    "taboo": ["muszla", "wolno", "ogród", "zwierzę", "deszcz"]
+  },
+  {
+    "word": "Komar",
+    "taboo": ["owad", "gryzie", "lato", "krew", "brzęczy"]
+  },
+  {
+    "word": "Biedronka",
+    "taboo": ["owad", "czerwona", "kropki", "mała", "skrzydła"]
+  },
+  {
+    "word": "Konik polny",
+    "taboo": ["owad", "skacze", "trawa", "zielony", "łąka"]
+  },
+  {
+    "word": "Łąka",
+    "taboo": ["trawa", "kwiaty", "pole", "zielona", "owady"]
+  },
+  {
+    "word": "Pole",
+    "taboo": ["ziemia", "rolnik", "uprawa", "trawa", "wieś"]
+  },
+  {
+    "word": "Rolnictwo",
+    "taboo": ["farma", "uprawa", "ziemia", "rolnik", "plony"]
+  },
+  {
+    "word": "Uprawa",
+    "taboo": ["rośliny", "ziemia", "rolnik", "pole", "sadzić"]
+  },
+  {
+    "word": "Kompost",
+    "taboo": ["odpady", "ogród", "naturalny", "rośliny", "ziemia"]
+  },
+  {
+    "word": "Ogród",
+    "taboo": ["kwiaty", "rośliny", "działka", "drzewka", "trawa"]
+  },
+  {
+    "word": "Park",
+    "taboo": ["drzewa", "spacer", "zieleń", "miasto", "ławka"]
+  },
+  {
+    "word": "Rezerwat",
+    "taboo": ["ochrona", "przyroda", "zwierzęta", "teren", "zakaz"]
+  },
+  {
+    "word": "Atmosfera",
+    "taboo": ["powietrze", "Ziemia", "warstwa", "gaz", "planeta"]
+  },
+  {
+    "word": "Fotosynteza",
+    "taboo": ["roślina", "słońce", "tlen", "liście", "światło"]
+  },
+  {
+    "word": "Tlen",
+    "taboo": ["oddychanie", "powietrze", "człowiek", "drzewa", "gaz"]
+  },
+  {
+    "word": "Ewolucja",
+    "taboo": ["zmiana", "gatunek", "Darwin", "czas", "rozwój"]
+  },
+  {
+    "word": "Gatunek",
+    "taboo": ["zwierzę", "roślina", "rodzaj", "grupa", "biologia"]
+  },
+  {
+    "word": "Las",
+    "taboo": ["drzewa", "grzyby", "zielony", "zwierzęta", "spacer"]
+  },
+  {
+    "word": "Drzewo",
+    "taboo": ["liście", "pień", "gałęzie", "las", "korzenie"]
+  },
+  {
+    "word": "Kwiat",
+    "taboo": ["roślina", "płatki", "ogród", "zapach", "łodyga"]
+  },
+  {
+    "word": "Rzeka",
+    "taboo": ["woda", "płynie", "brzeg", "most", "jezioro"]
+  },
+  {
+    "word": "Jezioro",
+    "taboo": ["woda", "ryby", "kąpiel", "brzeg", "łódka"]
+  },
+  {
+    "word": "Morze",
+    "taboo": ["plaża", "woda", "fale", "sól", "ocean"]
+  },
+  {
+    "word": "Góra",
+    "taboo": ["szczyt", "wysoka", "wspinaczka", "skała", "Tatry"]
+  },
+  {
+    "word": "Wulkan",
+    "taboo": ["lawa", "ogień", "wybuch", "góra", "krater"]
+  },
+  {
+    "word": "Pustynia",
+    "taboo": ["piasek", "gorąco", "Sahara", "kaktus", "sucho"]
+  },
+  {
+    "word": "Wyspa",
+    "taboo": ["morze", "woda", "ląd", "plaża", "statek"]
+  },
+  {
+    "word": "Wodospad",
+    "taboo": ["woda", "spada", "skała", "rzeka", "wysoko"]
+  },
+  {
+    "word": "Chmura",
+    "taboo": ["niebo", "deszcz", "biała", "powietrze", "para"]
+  },
+  {
+    "word": "Deszcz",
+    "taboo": ["woda", "krople", "chmura", "mokro", "pogoda"]
+  },
+  {
+    "word": "Śnieg",
+    "taboo": ["biały", "zima", "lód", "płatki", "zimno"]
+  },
+  {
+    "word": "Tęcza",
+    "taboo": ["kolory", "deszcz", "niebo", "łuk", "słońce"]
+  },
+  {
+    "word": "Burza",
+    "taboo": ["piorun", "grzmot", "deszcz", "wiatr", "błysk"]
+  },
+  {
+    "word": "Wiatr",
+    "taboo": ["powietrze", "dmucha", "huragan", "drzewa", "podmuch"]
+  },
+  {
+    "word": "Słońce",
+    "taboo": ["gwiazda", "światło", "ciepło", "dzień", "niebo"]
+  },
+  {
+    "word": "Księżyc",
+    "taboo": ["noc", "satelita", "niebo", "kosmos", "pełnia"]
+  },
+  {
+    "word": "Gwiazda",
+    "taboo": ["kosmos", "noc", "świeci", "niebo", "planeta"]
+  },
+  {
+    "word": "Planeta",
+    "taboo": ["kosmos", "Ziemia", "orbita", "Mars", "gwiazda"]
+  },
+  {
+    "word": "Ziemia",
+    "taboo": ["planeta", "świat", "ludzie", "globus", "kontynent"]
+  },
+  {
+    "word": "Pszczoła",
+    "taboo": ["miód", "owad", "ul", "żądło", "kwiat"]
+  },
+  {
+    "word": "Motyl",
+    "taboo": ["skrzydła", "owad", "kolorowy", "gąsienica", "lata"]
+  },
+  {
+    "word": "Mrówka",
+    "taboo": ["owad", "mała", "kolonia", "mrowisko", "pracuje"]
+  },
+  {
+    "word": "Pająk",
+    "taboo": ["sieć", "owad", "osiem", "nogi", "kąt"]
+  },
+  {
+    "word": "Żaba",
+    "taboo": ["zielona", "staw", "skacze", "płaz", "kumka"]
+  },
+  {
+    "word": "Bocian",
+    "taboo": ["ptak", "gniazdo", "długie nogi", "żaba", "wiosna"]
+  },
+  {
+    "word": "Orzeł",
+    "taboo": ["ptak", "skrzydła", "góry", "dziób", "lot"]
+  },
+  {
+    "word": "Wilk",
+    "taboo": ["pies", "las", "zwierzę", "stado", "wyje"]
+  },
+  {
+    "word": "Lis",
+    "taboo": ["rudy", "ogon", "las", "sprytny", "zwierzę"]
+  },
+  {
+    "word": "Niedźwiedź",
+    "taboo": ["miś", "las", "miód", "duży", "sen"]
+  },
+  {
+    "word": "Ryba",
+    "taboo": ["woda", "pływa", "morze", "łuski", "akwarium"]
+  },
+  {
+    "word": "Delfin",
+    "taboo": ["morze", "ssak", "woda", "skacze", "inteligentny"]
+  },
+  {
+    "word": "Rekin",
+    "taboo": ["morze", "zęby", "ryba", "niebezpieczny", "ocean"]
+  },
+  {
+    "word": "Żółw",
+    "taboo": ["skorupa", "wolno", "gad", "długi wiek", "nogi"]
+  },
+  {
+    "word": "Dinozaur",
+    "taboo": ["prehistoryczny", "wymarły", "kości", "jurajski", "gady"]
+  },
+  {
+    "word": "Kaktus",
+    "taboo": ["pustynia", "kolce", "roślina", "sucho", "doniczka"]
+  },
+  {
+    "word": "Grzyb",
+    "taboo": ["las", "kapelusz", "zbierać", "jadalny", "muchomor"]
+  },
+  {
+    "word": "Mech",
+    "taboo": ["zielony", "las", "wilgoć", "roślina", "kamień"]
+  },
+  {
+    "word": "Korzeń",
+    "taboo": ["drzewo", "ziemia", "pod ziemią", "roślina", "pień"]
+  },
+  {
+    "word": "Liść",
+    "taboo": ["drzewo", "zielony", "jesień", "gałąź", "roślina"]
+  },
+  {
+    "word": "Nasiono",
+    "taboo": ["roślina", "ziemia", "kiełkuje", "drzewo", "sadzić"]
+  },
+  {
+    "word": "Ekologia",
+    "taboo": ["środowisko", "natura", "ochrona", "recykling", "planeta"]
+  },
+  {
+    "word": "Recykling",
+    "taboo": ["śmieci", "segregacja", "odpady", "butelka", "ekologia"]
+  },
+  {
+    "word": "Park narodowy",
+    "taboo": ["ochrona", "przyroda", "zwierzęta", "teren", "las"]
+  },
+  {
+    "word": "Klimat",
+    "taboo": ["pogoda", "temperatura", "Ziemia", "zmiany", "atmosfera"]
+  },
+  {
+    "word": "Ocean",
+    "taboo": ["woda", "morze", "fala", "głęboki", "ryby"]
+  },
+  {
+    "word": "Kontynent",
+    "taboo": ["ląd", "Europa", "Ameryka", "mapa", "świat"]
+  },
+  {
+    "word": "Amazonia",
+    "taboo": ["las", "tropikalny", "rzeka", "Ameryka", "drzewa"]
+  }
+]
