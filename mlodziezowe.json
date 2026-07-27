@@ -1,398 +1,201 @@
 [
-  {
-    "word": "DM",
-    "taboo": ["wiadomość", "prywatna", "Instagram", "napisać", "czat"]
-  },
-  {
-    "word": "Avatar",
-    "taboo": ["postać", "profil", "obrazek", "gra", "internet"]
-  },
-  {
-    "word": "Nickname",
-    "taboo": ["pseudonim", "nazwa", "login", "gracz", "konto"]
-  },
-  {
-    "word": "Login",
-    "taboo": ["hasło", "konto", "nazwa", "wpisać", "internet"]
-  },
-  {
-    "word": "Update",
-    "taboo": ["aktualizacja", "nowa wersja", "program", "zmiana", "gra"]
-  },
-  {
-    "word": "Bug",
-    "taboo": ["błąd", "gra", "program", "problem", "naprawa"]
-  },
-  {
-    "word": "Lag",
-    "taboo": ["opóźnienie", "internet", "gra", "ping", "zawieszenie"]
-  },
-  {
-    "word": "Ping",
-    "taboo": ["internet", "opóźnienie", "gra", "serwer", "ms"]
-  },
-  {
-    "word": "NPC",
-    "taboo": ["postać", "gra", "komputer", "bohater", "sterowany"]
-  },
-  {
-    "word": "Skin",
-    "taboo": ["wygląd", "postać", "gra", "ubranie", "zmiana"]
-  },
-  {
-    "word": "Loot",
-    "taboo": ["przedmiot", "gra", "znaleźć", "nagroda", "skrzynka"]
-  },
-  {
-    "word": "Level",
-    "taboo": ["poziom", "gra", "awans", "doświadczenie", "postać"]
-  },
-  {
-    "word": "Boss",
-    "taboo": ["przeciwnik", "gra", "silny", "walka", "pokonać"]
-  },
-  {
-    "word": "Speedrun",
-    "taboo": ["szybko", "gra", "czas", "ukończyć", "rekord"]
-  },
-  {
-    "word": "Cosplay",
-    "taboo": ["kostium", "postać", "przebranie", "anime", "konwent"]
-  },
-  {
-    "word": "Anime",
-    "taboo": ["japoński", "bajka", "serial", "manga", "rysunek"]
-  },
-  {
-    "word": "Manga",
-    "taboo": ["komiks", "Japonia", "czytać", "anime", "książka"]
-  },
-  {
-    "word": "K-pop",
-    "taboo": ["Korea", "muzyka", "zespół", "idol", "taniec"]
-  },
-  {
-    "word": "Fandom",
-    "taboo": ["fani", "społeczność", "film", "seria", "grupa"]
-  },
-  {
-    "word": "Memiarz",
-    "taboo": ["memy", "internet", "żarty", "twórca", "śmieszne"]
-  },
-  {
-    "word": "Żabka",
-    "taboo": ["sklep", "hot dog", "zielona", "zakupy", "automat"]
-  },
-  {
-    "word": "Energetyk",
-    "taboo": ["napój", "kofeina", "puszka", "pić", "Red Bull"]
-  },
-  {
-    "word": "Bubble tea",
-    "taboo": ["napój", "kulki", "herbata", "słodki", "kubek"]
-  },
-  {
-    "word": "Ramen",
-    "taboo": ["zupa", "makaron", "Japonia", "jedzenie", "bulion"]
-  },
-  {
-    "word": "Burger",
-    "taboo": ["bułka", "mięso", "fast food", "frytki", "jedzenie"]
-  },
-  {
-    "word": "Pizza",
-    "taboo": ["ser", "włoska", "ciasto", "sos", "okrągła"]
-  },
-  {
-    "word": "Kebab",
-    "taboo": ["mięso", "bułka", "sos", "fast food", "tortilla"]
-  },
-  {
-    "word": "Sigma",
-    "taboo": ["trend", "internet", "alpha", "samotny", "młodzież"]
-  },
-  {
-    "word": "Alpha",
-    "taboo": ["lider", "silny", "najlepszy", "sigma", "dominacja"]
-  },
-  {
-    "word": "Rizz",
-    "taboo": ["podryw", "urok", "dziewczyna", "charyzma", "flirt"]
-  },
-  {
-    "word": "Sus",
-    "taboo": ["podejrzany", "Among Us", "dziwny", "kłamstwo", "gracz"]
-  },
-  {
-    "word": "Among Us",
-    "taboo": ["statek", "zdrajca", "gra", "kosmita", "zadanie"]
-  },
-  {
-    "word": "Beka",
-    "taboo": ["śmiech", "żart", "śmieszne", "radość", "kawał"]
-  },
-  {
-    "word": "XD",
-    "taboo": ["śmiech", "emotikon", "internet", "mina", "żart"]
-  },
-  {
-    "word": "Sztos",
-    "taboo": ["świetny", "super", "dobry", "fajny", "ocena"]
-  },
-  {
-    "word": "Git",
-    "taboo": ["dobrze", "super", "okej", "fajnie", "spoko"]
-  },
-  {
-    "word": "Rel",
-    "taboo": ["zgadzam", "prawda", "dokładnie", "czuję", "sytuacja"]
-  },
-  {
-    "word": "Drama",
-    "taboo": ["konflikt", "kłótnia", "internet", "problem", "osoby"]
-  },
-  {
-    "word": "Afera",
-    "taboo": ["drama", "problem", "internet", "kłótnia", "wydarzenie"]
-  },
-  {
-    "word": "Cancel",
-    "taboo": ["usunąć", "krytyka", "osoba", "internet", "bojkot"]
-  },
-  {
-    "word": "Randomowy",
-    "taboo": ["losowy", "przypadkowy", "dziwny", "wybór", "bez sensu"]
-  },
-  {
-    "word": "Ziom",
-    "taboo": ["kolega", "przyjaciel", "osoba", "znajomy", "człowiek"]
-  },
-  {
-    "word": "Crush",
-    "taboo": ["osoba", "podobać", "miłość", "sympatia", "zauroczenie"]
-  },
-  {
-    "word": "Ghosting",
-    "taboo": ["kontakt", "ignorować", "wiadomość", "osoba", "zniknąć"]
-  },
-  {
-    "word": "Friendzone",
-    "taboo": ["kolega", "miłość", "uczucie", "relacja", "podobać"]
-  },
-  {
-    "word": "Self-care",
-    "taboo": ["dbanie", "siebie", "odpoczynek", "zdrowie", "relaks"]
-  },
-  {
-    "word": "Mindset",
-    "taboo": ["myślenie", "nastawienie", "głowa", "sukces", "podejście"]
-  },
-  {
-    "word": "Glow up",
-    "taboo": ["zmiana", "wygląd", "lepiej", "styl", "metamorfoza"]
-  },
-  {
-    "word": "POV",
-    "taboo": ["punkt widzenia", "film", "TikTok", "sytuacja", "perspektywa"]
-  },
-  {
-    "word": "TikTok",
-    "taboo": ["filmiki", "aplikacja", "tańce", "rolki", "telefon"]
-  },
-  {
-    "word": "Instagram",
-    "taboo": ["zdjęcia", "lajki", "stories", "profil", "social media"]
-  },
-  {
-    "word": "Influencer",
-    "taboo": ["internet", "obserwujący", "YouTube", "twórca", "reklama"]
-  },
-  {
-    "word": "Selfie",
-    "taboo": ["zdjęcie", "telefon", "twarz", "aparat", "lustro"]
-  },
-  {
-    "word": "Hashtag",
-    "taboo": ["kratka", "tag", "Instagram", "oznaczenie", "słowo"]
-  },
-  {
-    "word": "Meme",
-    "taboo": ["obrazek", "internet", "śmieszny", "tekst", "żart"]
-  },
-  {
-    "word": "Discord",
-    "taboo": ["serwer", "czat", "gracze", "rozmowa", "aplikacja"]
-  },
-  {
-    "word": "Streamer",
-    "taboo": ["transmisja", "gry", "kamera", "internet", "live"]
-  },
-  {
-    "word": "Gaming",
-    "taboo": ["gry", "komputer", "granie", "konsola", "pad"]
-  },
-  {
-    "word": "Minecraft",
-    "taboo": ["klocki", "budowanie", "gra", "Steve", "świat"]
-  },
-  {
-    "word": "Fortnite",
-    "taboo": ["gra", "budowanie", "Epic", "skin", "bitwa"]
-  },
-  {
-    "word": "PlayStation",
-    "taboo": ["Sony", "konsola", "gry", "pad", "PS"]
-  },
-  {
-    "word": "Xbox",
-    "taboo": ["Microsoft", "konsola", "gry", "pad", "Game Pass"]
-  },
-  {
-    "word": "Smartfon",
-    "taboo": ["telefon", "ekran", "aplikacje", "dotyk", "internet"]
-  },
-  {
-    "word": "WiFi",
-    "taboo": ["internet", "sieć", "router", "hasło", "połączenie"]
-  },
-  {
-    "word": "Emoji",
-    "taboo": ["buźka", "ikonka", "telefon", "symbol", "mina"]
-  },
-  {
-    "word": "GIF",
-    "taboo": ["animacja", "obrazek", "krótki", "internet", "ruch"]
-  },
-  {
-    "word": "Vlog",
-    "taboo": ["film", "YouTube", "kamera", "nagranie", "życie"]
-  },
-  {
-    "word": "Podcast",
-    "taboo": ["audio", "słuchać", "program", "radio", "internet"]
-  },
-  {
-    "word": "YouTube",
-    "taboo": ["film", "kanał", "wideo", "subskrypcja", "oglądać"]
-  },
-  {
-    "word": "Netflix",
-    "taboo": ["serial", "film", "konto", "oglądać", "streaming"]
-  },
-  {
-    "word": "Spoiler",
-    "taboo": ["koniec", "fabuła", "film", "zdradzić", "informacja"]
-  },
-  {
-    "word": "Trend",
-    "taboo": ["moda", "popularny", "internet", "aktualny", "wyzwanie"]
-  },
-  {
-    "word": "Viral",
-    "taboo": ["popularny", "internet", "film", "wszyscy", "szybko"]
-  },
-  {
-    "word": "Challenge",
-    "taboo": ["wyzwanie", "zadanie", "TikTok", "próba", "konkurs"]
-  },
-  {
-    "word": "Cringe",
-    "taboo": ["żenada", "wstyd", "dziwne", "reakcja", "niekomfortowe"]
-  },
-  {
-    "word": "Slay",
-    "taboo": ["świetnie", "wyglądać", "styl", "moda", "sukces"]
-  },
-  {
-    "word": "Flex",
-    "taboo": ["chwalić", "pokazywać", "bogaty", "popisywać", "rzecz"]
-  },
-  {
-    "word": "Random",
-    "taboo": ["losowy", "przypadek", "wybór", "dziwny", "niespodziewany"]
-  },
-  {
-    "word": "Snapchat",
-    "taboo": ["zdjęcie", "filtr", "aplikacja", "znikające", "wiadomość"]
-  },
-  {
-    "word": "BeReal",
-    "taboo": ["aplikacja", "zdjęcie", "codziennie", "telefon", "prawdziwy"]
-  },
-  {
-    "word": "Spotify",
-    "taboo": ["muzyka", "piosenka", "playlista", "słuchać", "aplikacja"]
-  },
-  {
-    "word": "Playlista",
-    "taboo": ["muzyka", "utwory", "Spotify", "lista", "piosenki"]
-  },
-  {
-    "word": "Autotune",
-    "taboo": ["śpiew", "głos", "muzyka", "efekt", "rap"]
-  },
-  {
-    "word": "Rap",
-    "taboo": ["muzyka", "rym", "hip-hop", "tekst", "artysta"]
-  },
-  {
-    "word": "Koncert",
-    "taboo": ["muzyka", "scena", "artysta", "publiczność", "bilet"]
-  },
-  {
-    "word": "Festiwal",
-    "taboo": ["muzyka", "lato", "koncert", "tłum", "wydarzenie"]
-  },
-  {
-    "word": "Outfit",
-    "taboo": ["ubranie", "styl", "moda", "strój", "wygląd"]
-  },
-  {
-    "word": "Sneakersy",
-    "taboo": ["buty", "sportowe", "Nike", "Adidas", "nogi"]
-  },
-  {
-    "word": "Streetwear",
-    "taboo": ["moda", "ulica", "ubrania", "styl", "luźny"]
-  },
-  {
-    "word": "Vintage",
-    "taboo": ["stary", "retro", "moda", "dawny", "rzeczy"]
-  },
-  {
-    "word": "Second hand",
-    "taboo": ["ubrania", "używane", "sklep", "ciuchy", "zakupy"]
-  },
-  {
-    "word": "Drip",
-    "taboo": ["styl", "ubranie", "wygląd", "moda", "kozacki"]
-  },
-  {
-    "word": "Fit",
-    "taboo": ["siłownia", "ćwiczenia", "forma", "zdrowie", "ciało"]
-  },
-  {
-    "word": "Siłownia",
-    "taboo": ["ćwiczyć", "ciężary", "mięśnie", "trening", "sztanga"]
-  },
-  {
-    "word": "Influencerka",
-    "taboo": ["kobieta", "internet", "Instagram", "obserwujący", "reklamy"]
-  },
-  {
-    "word": "Obserwujący",
-    "taboo": ["followers", "konto", "internet", "ludzie", "profil"]
-  },
-  {
-    "word": "Follow",
-    "taboo": ["obserwować", "konto", "kliknąć", "Instagram", "subskrypcja"]
-  },
-  {
-    "word": "Like",
-    "taboo": ["lubię", "serce", "kliknięcie", "reakcja", "Instagram"]
-  },
-  {
-    "word": "Komentarz",
-    "taboo": ["opinia", "tekst", "post", "odpowiedź", "internet"]
-  }
+  {"word":"Egzamin","taboo":["Szkoła","Test","Nauka","Ocena","Uczeń"]},
+  {"word":"Matura","taboo":["Egzamin","Liceum","Polski","Studia","Abitur"]},
+  {"word":"Studia","taboo":["Uczelnia","Student","Nauka","Kierunek","Akademia"]},
+  {"word":"Nauczyciel","taboo":["Szkoła","Lekcja","Uczeń","Pedagog","Klasa"]},
+  {"word":"Uczeń","taboo":["Szkoła","Lekcja","Nauka","Klasa","Ocena"]},
+  {"word":"Przerwa","taboo":["Szkoła","Lekcja","Dzwonek","Czas","Odpoczynek"]},
+  {"word":"Wakacje","taboo":["Lato","Urlop","Wolne","Podróż","Szkoła"]},
+  {"word":"Ferie","taboo":["Zima","Wolne","Szkoła","Śnieg","Narty"]},
+  {"word":"Lekcja","taboo":["Szkoła","Nauczyciel","Klasa","Temat","Uczyć"]},
+  {"word":"Zadanie domowe","taboo":["Szkoła","Praca","Ćwiczenie","Uczeń","Lekcja"]},
+  {"word":"Notatki","taboo":["Zeszyt","Pisanie","Lekcja","Informacje","Szkoła"]},
+  {"word":"Zeszyt","taboo":["Szkoła","Pisanie","Kartki","Lekcja","Długopis"]},
+  {"word":"Plecak","taboo":["Szkoła","Książki","Noszenie","Torba","Uczeń"]},
+  {"word":"Długopis","taboo":["Pisanie","Atrament","Zeszyt","Niebieski","Szkoła"]},
+  {"word":"Biblioteka","taboo":["Książki","Czytanie","Regal","Cisza","Wypożyczanie"]},
+  {"word":"Książka","taboo":["Czytanie","Autor","Strony","Okładka","Biblioteka"]},
+  {"word":"Komiks","taboo":["Obrazki","Dymki","Rysunek","Historia","Książka"]},
+  {"word":"Film","taboo":["Kino","Aktor","Obraz","Fabuła","Ekran"]},
+  {"word":"Serial","taboo":["Odcinek","Netflix","Aktorzy","Sezon","Historia"]},
+  {"word":"Sezon","taboo":["Serial","Odcinki","Część","Netflix","Rok"]},
+  {"word":"Odcinek","taboo":["Serial","Czas","Część","Historia","Telewizja"]},
+  {"word":"Kino","taboo":["Film","Sala","Popcorn","Ekran","Bilety"]},
+  {"word":"Popcorn","taboo":["Kino","Przekąska","Kukurydza","Film","Masło"]},
+  {"word":"Superbohater","taboo":["Marvel","DC","Moc","Kostium","Komiks"]},
+  {"word":"Marvel","taboo":["Avengers","Komiksy","Filmy","Bohaterowie","Supermoce"]},
+  {"word":"Avengers","taboo":["Marvel","Iron Man","Thanos","Bohaterowie","Film"]},
+  {"word":"Batman","taboo":["Nietoperz","Gotham","Bruce","DC","Superbohater"]},
+  {"word":"Spider-Man","taboo":["Pająk","Sieć","Marvel","Peter","Bohater"]},
+  {"word":"Harry Potter","taboo":["Magia","Czarodziej","Hogwart","Różdżka","Film"]},
+  {"word":"Gra planszowa","taboo":["Pionki","Kostka","Stół","Zasady","Gracze"]},
+  {"word":"Kostka","taboo":["Losowanie","Gra","Oczka","Rzut","Plansza"]},
+  {"word":"Puzzle","taboo":["Układanie","Elementy","Obrazek","Gra","Kawałki"]},
+  {"word":"LEGO","taboo":["Klocki","Budowanie","Zabawka","Kolory","Zestaw"]},
+  {"word":"Zabawka","taboo":["Dziecko","Gra","Przedmiot","Bawić","Klocki"]},
+  {"word":"Klocki","taboo":["Budowanie","LEGO","Elementy","Zabawka","Kolory"]},
+  {"word":"Moda","taboo":["Ubrania","Styl","Trend","Wygląd","Ciuchy"]},
+  {"word":"Makijaż","taboo":["Kosmetyki","Twarz","Uroda","Puder","Kolory"]},
+  {"word":"Fryzura","taboo":["Włosy","Salon","Cięcie","Styl","Głowa"]},
+  {"word":"Tatuaż","taboo":["Skóra","Wzór","Igła","Rysunek","Atrament"]},
+  {"word":"Piercing","taboo":["Kolczyk","Ciało","Biżuteria","Igła","Ozdoba"]},
+  {"word":"Siłownia","taboo":["Ćwiczenia","Hantle","Mięśnie","Trening","Forma"]},
+  {"word":"Trening","taboo":["Sport","Ćwiczenia","Forma","Wysiłek","Plan"]},
+  {"word":"Zdrowy styl życia","taboo":["Dieta","Sport","Sen","Zdrowie","Nawyki"]},
+  {"word":"Dieta","taboo":["Jedzenie","Kalorie","Zdrowie","Posiłki","Odchudzanie"]},
+  {"word":"Energetyk","taboo":["Napój","Kofeina","Puszka","Pobudzenie","Monster"]},
+  {"word":"Kawa","taboo":["Napój","Kofeina","Rano","Kubek","Czarna"]},
+  {"word":"Bubble tea","taboo":["Napój","Kulki","Herbata","Modny","Kubek"]},
+  {"word":"Food truck","taboo":["Jedzenie","Samochód","Ulica","Restauracja","Mobilny"]},
+  {"word":"Fast food","taboo":["Burger","Szybkie","Jedzenie","Restauracja","Frytki"]},
+  {"word":"Burger","taboo":["Bułka","Mięso","Frytki","Fast food","Kanapka"]},
+  {"word":"Pizza","taboo":["Ser","Włochy","Ciasto","Sos","Jedzenie"]},
+  {"word":"Laptop","taboo":["Komputer","Ekran","Klawiatura","Praca","Internet"]},
+  {"word":"Tablet","taboo":["Ekran","Dotyk","Aplikacja","Urządzenie","Mobilny"]},
+  {"word":"Słuchawki bezprzewodowe","taboo":["Bluetooth","Muzyka","Uszy","Dźwięk","Telefon"]},
+  {"word":"Powerbank","taboo":["Bateria","Ładowanie","Telefon","Prąd","Mobilny"]},
+  {"word":"Ładowarka","taboo":["Kabel","Telefon","Prąd","Bateria","USB"]},
+  {"word":"Wi-Fi","taboo":["Internet","Router","Sieć","Połączenie","Hasło"]},
+  {"word":"Internet","taboo":["Sieć","Strona","Online","Przeglądarka","WWW"]},
+  {"word":"Google","taboo":["Wyszukiwarka","Internet","Szukaj","Strona","Chrome"]},
+  {"word":"Przeglądarka","taboo":["Internet","Chrome","Strona","Okno","WWW"]},
+  {"word":"Chmura internetowa","taboo":["Pliki","Online","Dane","Serwer","Zapisywanie"]},
+  {"word":"Hasło","taboo":["Konto","Logowanie","Bezpieczeństwo","Litery","PIN"]},
+  {"word":"Login","taboo":["Konto","Nazwa","Logowanie","Użytkownik","Internet"]},
+  {"word":"Konto online","taboo":["Profil","Hasło","Użytkownik","Aplikacja","Internet"]},
+  {"word":"Cyberbezpieczeństwo","taboo":["Internet","Ochrona","Haker","Dane","Bezpieczny"]},
+  {"word":"Haker","taboo":["Komputer","Atak","Kod","Internet","Włamanie"]},
+  {"word":"Wirus komputerowy","taboo":["Złośliwy","Program","Komputer","Infekcja","Antywirus"]},
+  {"word":"Influencerka","taboo":["Kobieta","Internet","Obserwujący","Reklama","Twórca"]},
+  {"word":"Creator","taboo":["Twórca","Internet","Film","Treści","Kanał"]},
+  {"word":"Content","taboo":["Treść","Internet","Film","Post","Twórca"]},
+  {"word":"Rolki","taboo":["Instagram","Film","Krótki","Wideo","TikTok"]},
+  {"word":"Stories","taboo":["Instagram","Relacja","Zdjęcie","24 godziny","Post"]},
+  {"word":"Live","taboo":["Na żywo","Stream","Internet","Transmisja","Kamera"]},
+  {"word":"Ban","taboo":["Blokada","Konto","Zakaz","Internet","Usunięcie"]},
+  {"word":"Admin","taboo":["Moderator","Serwer","Uprawnienia","Zarządza","Konto"]},
+  {"word":"Moderator","taboo":["Pilnuje","Forum","Regulamin","Czat","Internet"]},
+  {"word":"Spam","taboo":["Wiadomości","Niechciane","Internet","Reklama","Powtarzanie"]},
+  {"word":"Fake news","taboo":["Informacja","Fałszywe","Internet","Wiadomość","Plotka"]},
+  {"word":"Clickbait","taboo":["Tytuł","Kliknięcie","Film","Internet","Sensacja"]},
+  {"word":"Komentator","taboo":["Opinia","Mówi","Internet","Film","Analiza"]},
+  {"word":"Recenzja","taboo":["Ocena","Opinia","Produkt","Film","Książka"]},
+  {"word":"Ranking","taboo":["Lista","Najlepszy","Miejsce","Ocena","Porównanie"]},
+  {"word":"Topka","taboo":["Najlepsi","Lista","Ranking","Pierwsze","Slang"]},
+  {"word":"Mieć vibe","taboo":["Klimat","Styl","Pasować","Energia","Slang"]},
+  {"word":"Vibe","taboo":["Klimat","Atmosfera","Styl","Energia","Odczucie"]},
+  {"word":"Mood","taboo":["Nastrój","Emocje","Stan","Internet","Slang"]},
+  {"word":"Aesthetic","taboo":["Styl","Wygląd","Klimat","Zdjęcia","Moda"]},
+  {"word":"Minimalizm","taboo":["Prosto","Styl","Mało","Wystrój","Moda"]},
+  {"word":"DIY","taboo":["Zrób sam","Ręcznie","Projekt","Tworzenie","Pomysł"]},
+  {"word":"Hobby","taboo":["Pasja","Czas wolny","Zainteresowanie","Zajęcie","Lubić"]},
+  {"word":"Kolekcjonowanie","taboo":["Zbierać","Przedmioty","Pasja","Zestaw","Kolekcja"]},
+  {"word":"Planszówki","taboo":["Gra","Stół","Pionki","Kostka","Towarzystwo"]},
+  {"word":"Escape room","taboo":["Pokój","Zagadki","Wyjście","Gra","Zespół"]},
+  {"word":"Karaoke","taboo":["Śpiew","Mikrofon","Muzyka","Piosenka","Zabawa"]},
+  {"word":"Impreza","taboo":["Zabawa","Muzyka","Znajomi","Taniec","Spotkanie"]},
+  {"word":"Domówka","taboo":["Impreza","Dom","Znajomi","Muzyka","Zabawa"]},
+  {"word":"Randka","taboo":["Spotkanie","Para","Miłość","Kino","Restauracja"]},
+  {"word":"Przyjaźń","taboo":["Znajomy","Relacja","Osoba","Zaufanie","Kolega"]},
+  {"word":"Klasa","taboo":["Szkoła","Uczniowie","Lekcja","Sala","Nauczyciel"]},
+  {"word":"Kartkówka","taboo":["Szkoła","Test","Nauczyciel","Pytania","Ocena"]},
+  {"word":"Sprawdzian","taboo":["Test","Nauka","Szkoła","Ocena","Pytania"]},
+  {"word":"Anime","taboo":["Japonia","Manga","Kreskówka","Postacie","Serial"]},
+  {"word":"Manga","taboo":["Komiks","Japonia","Anime","Rysunki","Książka"]},
+  {"word":"K-pop","taboo":["Korea","Muzyka","Zespół","Taniec","Idole"]},
+  {"word":"BTS","taboo":["Korea","Zespół","Muzyka","Idole","ARMY"]},
+  {"word":"Blackpink","taboo":["Korea","Dziewczyny","Muzyka","K-pop","Zespół"]},
+  {"word":"Koncert","taboo":["Muzyka","Scena","Artysta","Publiczność","Bilety"]},
+  {"word":"Festiwal muzyczny","taboo":["Koncert","Tłum","Muzyka","Scena","Impreza"]},
+  {"word":"Playlista","taboo":["Muzyka","Utwory","Spotify","Lista","Słuchanie"]},
+  {"word":"Remix","taboo":["Muzyka","DJ","Nowa wersja","Utwór","Miks"]},
+  {"word":"DJ","taboo":["Muzyka","Impreza","Płyty","Klub","Miksowanie"]},
+  {"word":"Rap","taboo":["Muzyka","Rymy","Tekst","Hip-hop","Artysta"]},
+  {"word":"Hip-hop","taboo":["Rap","Kultura","Muzyka","Taniec","Ulica"]},
+  {"word":"Freestyle","taboo":["Rap","Improwizacja","Rymy","Tekst","Wymyślanie"]},
+  {"word":"Podcast","taboo":["Audio","Rozmowa","Internet","Odcinek","Słuchanie"]},
+  {"word":"Audiobook","taboo":["Książka","Czytanie","Głos","Nagranie","Słuchanie"]},
+  {"word":"Gaming","taboo":["Gry","Komputer","Konsola","Granie","Gracz"]},
+  {"word":"Gamer","taboo":["Gracz","Gry","Komputer","Konsola","Internet"]},
+  {"word":"Minecraft","taboo":["Klocki","Gra","Budowanie","Steve","Bloki"]},
+  {"word":"Fortnite","taboo":["Gra","Battle royale","Budowanie","Epic","Strzelanie"]},
+  {"word":"Roblox","taboo":["Gra","Platforma","Dzieci","Światy","Avatar"]},
+  {"word":"League of Legends","taboo":["Gra","Riot","Postacie","MOBA","Komputer"]},
+  {"word":"Counter Strike","taboo":["Gra","Strzelanka","Terroryści","Mapa","Drużyna"]},
+  {"word":"PlayStation","taboo":["Konsola","Sony","Gry","Pad","PS5"]},
+  {"word":"Xbox","taboo":["Konsola","Microsoft","Gry","Pad","Game Pass"]},
+  {"word":"Nintendo Switch","taboo":["Konsola","Mario","Przenośna","Gra","Nintendo"]},
+  {"word":"Steam","taboo":["Gry","Platforma","PC","Sklep","Komputer"]},
+  {"word":"Discord bot","taboo":["Automat","Serwer","Komenda","Program","Czat"]},
+  {"word":"Streamerka","taboo":["Kamera","Live","Internet","Gra","Widzowie"]},
+  {"word":"Speedrun","taboo":["Gra","Czas","Rekord","Szybko","Przejście"]},
+  {"word":"Achievement","taboo":["Osiągnięcie","Gra","Nagroda","Odblokować","Punkt"]},
+  {"word":"Skin","taboo":["Wygląd","Gra","Postać","Strój","Przedmiot"]},
+  {"word":"Battle Pass","taboo":["Gra","Nagrody","Sezon","Poziom","Kupno"]},
+  {"word":"Lootbox","taboo":["Gra","Skrzynka","Losowanie","Przedmiot","Nagroda"]},
+  {"word":"NPC","taboo":["Gra","Postać","Komputer","Bohater","Sterowany"]},
+  {"word":"Boss","taboo":["Gra","Przeciwnik","Poziom","Walczysz","Finał"]},
+  {"word":"Level","taboo":["Poziom","Gra","Doświadczenie","Awans","Postać"]},
+  {"word":"XP","taboo":["Punkty","Doświadczenie","Gra","Poziom","Zdobywać"]},
+  {"word":"Tutorial","taboo":["Instrukcja","Nauka","Gra","Początek","Pomoc"]},
+  {"word":"Spoiler","taboo":["Fabuła","Zdradzić","Film","Koniec","Informacja"]},
+  {"word":"Fandom","taboo":["Fani","Społeczność","Serial","Grupa","Internet"]},
+  {"word":"Fanpage","taboo":["Strona","Fani","Facebook","Profil","Internet"]},
+  {"word":"Reddit","taboo":["Forum","Internet","Społeczność","Posty","Komentarze"]},
+  {"word":"Forum internetowe","taboo":["Dyskusja","Użytkownicy","Posty","Komentarze","Strona"]},
+  {"word":"ChatGPT","taboo":["AI","Sztuczna inteligencja","Pytania","Robot","Tekst"]},
+  {"word":"Sztuczna inteligencja","taboo":["AI","Komputer","Robot","Technologia","Algorytm"]},
+  {"word":"Robot","taboo":["Maszyna","Automat","Technologia","Człowiek","AI"]},
+  {"word":"Smartfon","taboo":["Telefon","Aplikacje","Ekran","Internet","Dotyk"]},
+  {"word":"Aplikacja","taboo":["Telefon","Program","Sklep","Pobieranie","Ikona"]},
+  {"word":"Smartwatch","taboo":["Zegarek","Telefon","Sport","Powiadomienia","Ekran"]},
+  {"word":"TikTok","taboo":["Filmiki","Aplikacja","Taniec","Rolki","Internet"]},
+  {"word":"Instagram","taboo":["Zdjęcia","Stories","Lajki","Profil","Social media"]},
+  {"word":"YouTube","taboo":["Filmy","Kanał","Subskrypcja","Streamer","Wideo"]},
+  {"word":"Snapchat","taboo":["Zdjęcia","Filtry","Znikające","Aplikacja","Telefon"]},
+  {"word":"Discord","taboo":["Serwer","Rozmowa","Gracze","Czat","Głos"]},
+  {"word":"Twitch","taboo":["Stream","Granie","Streamer","Live","Widzowie"]},
+  {"word":"Netflix","taboo":["Serial","Filmy","Platforma","Oglądanie","Abonament"]},
+  {"word":"Spotify","taboo":["Muzyka","Playlista","Piosenki","Słuchanie","Aplikacja"]},
+  {"word":"Mem","taboo":["Internet","Obrazek","Żart","Śmieszny","Kultura"]},
+  {"word":"Viral","taboo":["Popularny","Internet","Trend","Udostępnienia","Modny"]},
+  {"word":"Influencer","taboo":["Internet","Obserwujący","Reklama","Twórca","Popularny"]},
+  {"word":"Streamer","taboo":["Live","Gra","Kamera","Internet","Widzowie"]},
+  {"word":"Youtuber","taboo":["Kanał","Film","Subskrypcja","Twórca","Internet"]},
+  {"word":"Selfie","taboo":["Zdjęcie","Telefon","Aparat","Twarz","Pozowanie"]},
+  {"word":"Hashtag","taboo":["Krzyżyk","Instagram","Tag","Symbol","Post"]},
+  {"word":"Emoji","taboo":["Buźka","Ikona","Telefon","Emotka","Symbol"]},
+  {"word":"GIF","taboo":["Animacja","Obrazek","Internet","Krótki","Ruch"]},
+  {"word":"Avatar","taboo":["Profil","Postać","Zdjęcie","Gra","Ikona"]},
+  {"word":"Profil","taboo":["Konto","Zdjęcie","Użytkownik","Internet","Strona"]},
+  {"word":"Follow","taboo":["Obserwować","Instagram","Konto","Kliknąć","Fan"]},
+  {"word":"Like","taboo":["Lubię","Serduszko","Kliknięcie","Post","Facebook"]},
+  {"word":"Komentarz","taboo":["Opinia","Post","Internet","Odpowiedź","Tekst"]},
+  {"word":"Influencer marketing","taboo":["Reklama","Marka","Internet","Promocja","Twórca"]},
+  {"word":"Trend","taboo":["Moda","Popularne","Internet","Nowe","Wirusowe"]},
+  {"word":"Challenge","taboo":["Wyzwanie","Internet","Film","Próba","Trend"]},
+  {"word":"Hasło viralowe","taboo":["Popularne","Internet","Powtarzane","Trend","Mem"]},
+  {"word":"FOMO","taboo":["Strach","Nieobecność","Trend","Internet","Przegapić"]},
+  {"word":"Slang","taboo":["Młodzież","Słowa","Język","Wyrażenia","Gwara"]},
+  {"word":"Cringe","taboo":["Żenada","Wstyd","Internet","Dziwne","Reakcja"]},
+  {"word":"Sztos","taboo":["Super","Dobre","Fajne","Slang","Ocena"]},
+  {"word":"Rel","taboo":["Zgadzam się","Internet","Skrót","Prawda","Komentarz"]},
+  {"word":"XD","taboo":["Śmiech","Emotka","Internet","Żart","Buźka"]},
+  {"word":"LOL","taboo":["Śmiech","Internet","Skrót","Żart","Angielski"]},
+  {"word":"OMG","taboo":["Zaskoczenie","Skrót","Angielski","Szok","Reakcja"]},
+  {"word":"BTW","taboo":["Skrót","Angielski","Przy okazji","Internet","Rozmowa"]},
+  {"word":"DM","taboo":["Wiadomość","Prywatna","Czat","Instagram","Kontakt"]},
+  {"word":"Self-care","taboo":["Dbam","Zdrowie","Relaks","Samopoczucie","Moda"]},
+  {"word":"Glow up","taboo":["Zmiana","Wygląd","Lepszy","Metamorfoza","Styl"]},
+  {"word":"Outfit","taboo":["Ubranie","Styl","Moda","Strój","Wygląd"]},
+  {"word":"Streetwear","taboo":["Moda","Ulica","Marki","Buty","Styl"]},
+  {"word":"Sneakersy","taboo":["Buty","Sportowe","Moda","Adidas","Nike"]},
+  {"word":"Hype","taboo":["Popularność","Trend","Moda","Emocje","Oczekiwanie"]},
+  {"word":"Drop","taboo":["Premiera","Limitowane","Marka","Kupno","Nowość"]},
+  {"word":"Limited edition","taboo":["Ograniczone","Kolekcja","Rzadkie","Marka","Zakup"]},
+  {"word":"Second hand","taboo":["Używane","Ciuchy","Sklep","Moda","Tanie"]},
+  {"word":"Vintage","taboo":["Stare","Styl","Ubrania","Retro","Moda"]},
+  {"word":"E-girl","taboo":["Styl","Internet","Makijaż","TikTok","Dziewczyna"]},
+  {"word":"E-boy","taboo":["Styl","Internet","Moda","Chłopak","TikTok"]},
+  {"word":"Cosplay","taboo":["Kostium","Postać","Przebranie","Anime","Konwent"]}
 ]
