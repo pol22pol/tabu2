@@ -1,5 +1,6 @@
 # TABU — architektura modułowa
 
+To gra typu tabu, trzeba zgadywać hasla nie uzywajac zakazanych slow. 
 Ten sam program co wcześniej (identyczne zasady i zachowanie), tylko rozbity
 z jednego pliku `index.html` (872 linie) na moduły ES (`type="module"`).
 Żadnych zewnętrznych bibliotek, żadnego bundlera — działa wprost z pliku
