@@ -580,7 +580,7 @@ input[type="number"]:focus {
 
 /* ---------- Animacja nowej karty ---------- */
 .game-card.card-flip {
-  animation: card-flip-in 0.25s ease-out;
+  animation: card-flip-in 0.4s ease-out;
 }
 
 @keyframes card-flip-in {
