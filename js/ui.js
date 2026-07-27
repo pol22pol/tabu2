@@ -17,17 +17,18 @@ export function showView(viewId) {
   document.getElementById(viewId).classList.remove("hidden");
 }
 
-export function renderCategoriesList(selectedCategoryIds) {
-  const container = document.getElementById("categories-list");
-  container.innerHTML = CATEGORY_FILES.map(
-    (cat) => `
-      <label class="checkbox-item">
-        <input type="checkbox" value="${cat.id}" ${selectedCategoryIds.includes(cat.id) ? "checked" : ""}>
-        ${cat.name}
-      </label>
-    `
-  ).join("");
+export function renderCard(card) {
+  document.getElementById("main-word").innerText = card.word.toUpperCase();
+  document.getElementById("taboo-list").innerHTML = card.taboo
+    .map((item) => `<li>${item.toUpperCase()}</li>`)
+    .join("");
+
+  const cardEl = document.querySelector("#game-view .game-card");
+  cardEl.classList.remove("card-flip");
+  void cardEl.offsetWidth;
+  cardEl.classList.add("card-flip");
 }
+
 
 export function getSelectedCategoryIds() {
   const checkboxes = document.querySelectorAll('#categories-list input[type="checkbox"]:checked');
