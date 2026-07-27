@@ -211,3 +211,23 @@ export function renderHistory(history) {
     )
     .join("");
 }
+export function showCountdownOverlay() {
+  document.getElementById("countdown-overlay").classList.remove("hidden");
+}
+
+export function hideCountdownOverlay() {
+  document.getElementById("countdown-overlay").classList.add("hidden");
+}
+
+export function setCountdownNumber(text) {
+  const el = document.getElementById("countdown-number");
+  el.innerText = text;
+  el.style.animation = "none";
+  void el.offsetWidth; // wymusza reflow, żeby animacja odpaliła się od nowa
+  el.style.animation = "";
+}
+
+export function setActionsLocked(locked) {
+  const grid = document.querySelector(".action-grid");
+  grid.classList.toggle("actions-locked", locked);
+}
