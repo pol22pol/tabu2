@@ -9,6 +9,7 @@ import {
   initSetupView,
   saveSettingsAndStart,
   startTurn,
+  beginTurnCountdown,   // ← dodaj
   handlePoint,
   handleSkip,
   showHistoryView,
@@ -18,6 +19,9 @@ import {
   addPlayerField,
   removePlayerField,
 } from "./game.js";
+
+window.beginTurnCountdown = beginTurnCountdown; // ← dodaj
+
 
 window.adjustValue = adjustValue;
 window.closeModal = closeModal;
