@@ -578,15 +578,16 @@ input[type="number"]:focus {
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* ---------- Animacja nowej karty ---------- */
 .game-card.card-flip {
-  animation: card-flip-in 0.4s ease-out;
+  animation: card-flip-in 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @keyframes card-flip-in {
-  0%   { transform: scale(0.92); opacity: 0.3; }
-  100% { transform: scale(1); opacity: 1; }
+  0%   { transform: scale(0.8) translateY(10px); opacity: 0; }
+  60%  { transform: scale(1.04) translateY(0); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
 }
+
 
 /* ---------- Blokada przycisków (anti double-click) ---------- */
 .action-grid.actions-locked .btn {
