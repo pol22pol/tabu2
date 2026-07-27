@@ -198,7 +198,7 @@ function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-const ACTION_LOCK_MS = 350;
+const ACTION_LOCK_MS = 600;
 const COUNTDOWN_STEP_MS = 700;
 
 export function beginTurnCountdown() {
