@@ -162,13 +162,6 @@ export function updateTimerDisplay(timeLeft) {
   document.getElementById("timer").innerText = timeLeft + "s";
 }
 
-export function renderCard(card) {
-  document.getElementById("main-word").innerText = card.word.toUpperCase();
-  document.getElementById("taboo-list").innerHTML = card.taboo
-    .map((item) => `<li>${item.toUpperCase()}</li>`)
-    .join("");
-}
-
 export function updateRoundScoreDisplay(roundScore) {
   document.getElementById("current-score").innerText = roundScore;
 }
