@@ -124,19 +124,27 @@ function nextCard() {
   ui.renderCard(card);
 }
 
-export function handlePoint(points) {
+export async function handlePoint(points) {
+  ui.setActionsLocked(true);
   currentRoundScore += points;
   ui.updateRoundScoreDisplay(currentRoundScore);
   nextCard();
+  await delay(ACTION_LOCK_MS);
+  ui.setActionsLocked(false);
+  ui.updateSkipsDisplay(currentSkipsLeft);
 }
 
-export function handleSkip() {
-  if (currentSkipsLeft > 0) {
-    currentSkipsLeft--;
-    ui.updateSkipsDisplay(currentSkipsLeft);
-    nextCard();
-  }
+export async function handleSkip() {
+  if (currentSkipsLeft <= 0) return;
+  ui.setActionsLocked(true);
+  currentSkipsLeft--;
+  ui.updateSkipsDisplay(currentSkipsLeft);
+  nextCard();
+  await delay(ACTION_LOCK_MS);
+  ui.setActionsLocked(false);
+  ui.updateSkipsDisplay(currentSkipsLeft);
 }
+
 
 function endTurn() {
   timer.stop();
