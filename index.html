@@ -85,7 +85,8 @@
       <div style="font-size: 0.75rem; font-weight: 900; color: var(--primary); letter-spacing: 2px;" id="turn-indicator">RUNDA 1 Z 4 (TURA 1/2)</div>
       <h2 id="turn-title" style="margin: 12px 0 6px 0; font-size: 1.5rem; text-transform: uppercase;">PRZYGOTUJ SIĘ!</h2>
       <p id="turn-desc" style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;"></p>
-      <button class="btn btn-main" onclick="startTurn()">ROZPOCZNIJ TURĘ</button>
+      <button class="btn btn-main" onclick="beginTurnCountdown()">ROZPOCZNIJ TURĘ</button>
+
     </div>
 
     <div class="glass-card">
@@ -159,6 +160,9 @@
     <div class="modal-body" id="modal-body">Treść komunikatu</div>
     <button class="btn btn-main" onclick="closeModal()">OK</button>
   </div>
+</div>
+<div id="countdown-overlay" class="countdown-overlay hidden">
+  <div class="countdown-number" id="countdown-number">3</div>
 </div>
 
 <script type="module" src="js/main.js"></script>
