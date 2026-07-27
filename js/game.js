@@ -186,3 +186,29 @@ export function clearHistory() {
 export function showSetupView() {
   ui.showView("setup-view");
 }
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+const ACTION_LOCK_MS = 350;
+const COUNTDOWN_STEP_MS = 700;
+
+export function beginTurnCountdown() {
+  ui.showCountdownOverlay();
+  let count = 3;
+  ui.setCountdownNumber(count);
+
+  const interval = setInterval(() => {
+    count--;
+    if (count > 0) {
+      ui.setCountdownNumber(count);
+    } else {
+      clearInterval(interval);
+      ui.setCountdownNumber("START!");
+      setTimeout(() => {
+        ui.hideCountdownOverlay();
+        startTurn();
+      }, 500);
+    }
+  }, COUNTDOWN_STEP_MS);
+}
