@@ -225,3 +225,14 @@ export function setActionsLocked(locked) {
   const grid = document.querySelector(".action-grid");
   grid.classList.toggle("actions-locked", locked);
 }
+export function renderCategoriesList(selectedCategoryIds) {
+  const container = document.getElementById("categories-list");
+  container.innerHTML = CATEGORY_FILES.map(
+    (cat) => `
+      <label class="checkbox-item">
+        <input type="checkbox" value="${cat.id}" ${selectedCategoryIds.includes(cat.id) ? "checked" : ""}>
+        ${cat.name}
+      </label>
+    `
+  ).join("");
+}
